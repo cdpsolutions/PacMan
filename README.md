@@ -1,13 +1,13 @@
 # PacMan
-CIS269
+/*CIS269
 
-Debug and Edit broken PacMan game
+Debug / Edit a broken PacMan game
 
 1) Fixed the expired certificate problem which kept the program from running
 
-2)Translate relevant comments from Dutch to English
+2) Translate relevant comments from Dutch to English
 
-3)	When you lose a life, pause the game for a couple of seconds so the user realizes something has happened. The pause should suspend the movement of both pacman and the ghosts.
+3)	When you lose a life, pause the game for a couple of seconds so the user realizes something has happened. The pause should suspend the movement of both pacman and the ghosts.*/
 
  static void Pause()
         {
@@ -27,7 +27,7 @@ Debug and Edit broken PacMan game
                 lives -= 1;
                 Pause();
 
-4)	When you go through the left/right portal and push the opposite arrow key while travelling through, the game crashed.
+//4)	When you go through the left/right portal and push the opposite arrow key while travelling through, the game crashed.
 
  private void Main_KeyDown(object sender, KeyEventArgs e)
         {
@@ -69,7 +69,7 @@ namespace Pacman
         Monster pinkGhost;
         Monster aquaGhost;
         Monster orangeGhost;
-        //for this project we added sound when Pacman dies and when the game plays
+        //for this project added sound when Pacman dies and when the game plays
         // This SoundPlayer plays a sound whenever PacMan dies but comes back to life.
         //**Special Thanks to HB Radke for creating all the sounds/music especially for this game**
         System.Media.SoundPlayer dieSoundPlayer = new System.Media.SoundPlayer(@"../../sounds/pacdies.wav");
